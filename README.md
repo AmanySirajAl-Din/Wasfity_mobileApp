@@ -19,7 +19,23 @@
 
     `C:\Users\[UserName]\AppData\Local\Android\Sdk`
 
-  - Create Emulator in Android Studio from 'AVD Manager'
+- Create Emulator in Android Studio from 'AVD Manager'
+
+- To install yarn
+
+  npm i -g yarn
+
+- To install node modules
+
+  ```
+  npm init
+  ```
+
+  OR
+
+  ```
+  yarn
+  ```
 
 - Create & install 'React Native' project
   ```
@@ -29,6 +45,22 @@
   ```
   cd ReactNativeLabs
   ```
+- Install Axios (for HTTP requests)
+
+  ```
+  npm install axios
+  ```
+
+  OR
+
+  ```
+  yarn add axios
+  ```
+
+  - To use it:
+    ```
+    import axios from 'axios';
+    ```
 
 ### To Run the app on the Emulator
 
