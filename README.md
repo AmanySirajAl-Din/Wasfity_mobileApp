@@ -81,3 +81,11 @@ To show options and devTools
 `Press ctrl + M`
 
 ---
+
+## Steps to perepare files' structure (design pattern)
+
+- Create 'src' folder
+- Move 'App.js' to 'src' folder
+- Rename 'App.js' to 'index.js'
+- Update 'App' path in the outter 'index.js' file
+- Create folders {common, components, screens} in 'src' folder each has 'index.js' file
