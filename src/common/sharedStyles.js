@@ -2,6 +2,7 @@ import {StyleSheet} from 'react-native';
 import {COLORS, FONTS} from './';
 
 export default StyleSheet.create({
+  container: {},
   w100: {
     width: '100%',
   },
@@ -18,5 +19,8 @@ export default StyleSheet.create({
   },
   mainFontBold: {
     fontFamily: FONTS.bold,
+  },
+  redBg: {
+    backgroundColor: 'red',
   },
 });

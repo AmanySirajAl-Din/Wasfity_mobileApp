@@ -89,3 +89,15 @@ To show options and devTools
 - Rename 'App.js' to 'index.js'
 - Update 'App' path in the outter 'index.js' file
 - Create folders {common, components, screens} in 'src' folder each has 'index.js' file
+- Create 'assets' folder to put images and fonts (or any resorces) in it
+
+### To use fonts
+
+- Create 'react-native.config.js' file
+- In prev file:
+
+```
+module.exports = {
+  assets: ['./assets/fonts/'],
+};
+```
