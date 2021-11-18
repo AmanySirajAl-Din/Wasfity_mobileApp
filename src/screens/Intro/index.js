@@ -11,7 +11,7 @@ import introBg_3 from '../../../assets/images/introBg_3.png';
 
 export default function Intro() {
   const [pageNum, setPageNum] = useState(0);
-  //const [bgStyle, setBgStyle] = useState(styles.introBg_1);
+
   let imageSrcArr = [introBg_1, introBg_2, introBg_3];
   /* useEffect(() => {
     switch(pageNum){
@@ -41,7 +41,9 @@ export default function Intro() {
         source={imageSrcArr[pageNum]}
         resizeMode="cover"
         style={styles.image}>
-        <Text style={styles.text}>{textObj[pageNum].title}</Text>
+        <Text style={[styles.text, styles.title]}>
+          {textObj[pageNum].title}
+        </Text>
         <Text style={styles.text}>{textObj[pageNum].text}</Text>
       </ImageBackground>
     </View>

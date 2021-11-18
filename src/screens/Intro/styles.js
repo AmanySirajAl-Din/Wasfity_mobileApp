@@ -7,14 +7,17 @@ export default StyleSheet.create({
     justifyContent: 'flex-end',
   },
   text: {
+    color: COLORS.black,
     fontFamily: FONTS.regular,
     fontSize: 18,
-    padding: 20,
-    marginBottom: 30,
+    marginBottom: 40,
     textAlign: 'center',
+    paddingEnd: 50,
+    paddingStart: 50,
   },
   title: {
     fontFamily: FONTS.bold,
     fontSize: 26,
+    marginBottom: 10,
   },
 });
