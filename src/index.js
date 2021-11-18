@@ -9,12 +9,7 @@ const App = () => {
     // <StatusBar barStyle={'light-content'} />
     // <Text>Hello World</Text>
     <SafeAreaView
-      style={[
-        SharedStyles.h100,
-        SharedStyles.w100,
-        SharedStyles.container,
-      ]}>
-      <Text>Hello World</Text>
+      style={[SharedStyles.h100, SharedStyles.w100, SharedStyles.container]}>
       <IntroScreen />
     </SafeAreaView>
   );
