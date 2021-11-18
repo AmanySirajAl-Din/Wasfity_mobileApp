@@ -22,9 +22,9 @@
 - Create Emulator in Android Studio from 'AVD Manager'
 
 - To install yarn
-
+  ```
   npm i -g yarn
-
+  ```
 - To install node modules
 
   ```
@@ -38,13 +38,17 @@
   ```
 
 - Create & install 'React Native' project
+
   ```
   npx react-native init ReactNativeLabs
   ```
-- Go to project folder
+
+  - Go to project folder
+
   ```
   cd ReactNativeLabs
   ```
+
 - Install Axios (for HTTP requests)
 
   ```
@@ -61,11 +65,16 @@
     ```
     import axios from 'axios';
     ```
+- Link your native dependencies (Link Libraries)
+  ```
+  npx react-native link
+  ```
 
 ### To Run the app on the Emulator
 
 - Open the emulator
 - In the app folder:
+
   ```
   npm run android
   ```
@@ -97,7 +106,13 @@ To show options and devTools
 - In prev file:
 
 ```
+
 module.exports = {
-  assets: ['./assets/fonts/'],
+assets: ['./assets/fonts/'],
 };
+
+```
+
+```
+
 ```
