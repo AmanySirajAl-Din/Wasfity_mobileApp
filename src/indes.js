@@ -7,7 +7,7 @@ const App = () => {
     // <StatusBar barStyle={'light-content'} />
     // <Text>Hello World</Text>
     <SafeAreaView>
-      <></>
+      <Text>Hello World</Text>
     </SafeAreaView>
   );
 };
