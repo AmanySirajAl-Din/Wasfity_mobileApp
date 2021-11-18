@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 const FONTS = {
   // const must be same name at export
   regular: 'Roboto-Regular',
