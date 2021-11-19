@@ -65,10 +65,18 @@
     ```
     import axios from 'axios';
     ```
+
 - Link your native dependencies (Link Libraries)
+
   ```
   npx react-native link
   ```
+
+- Install react-native-app-intro-slider
+
+```
+yarn add react-native-app-intro-slider
+```
 
 ### To Run the app on the Emulator
 
@@ -106,13 +114,7 @@ To show options and devTools
 - In prev file:
 
 ```
-
 module.exports = {
 assets: ['./assets/fonts/'],
 };
-
-```
-
-```
-
 ```
