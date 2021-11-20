@@ -74,15 +74,34 @@
 
 - Install react-native-app-intro-slider
 
-```
-yarn add react-native-app-intro-slider
-```
+  ```
+  yarn add react-native-app-intro-slider
+  ```
 
-OR
+  OR
 
-```
-npm install react-native-app-intro-slider --save
-```
+  ```
+  npm install react-native-app-intro-slider --save
+  ```
+
+  References:
+
+    https://aboutreact.com/react-native-app-intro-slider/
+    https://www.npmjs.com/package/react-native-app-intro-slider
+
+- Install react-native-onboarding-swiper
+
+  ```
+  yarn add react-native-onboarding-swiper
+  ```
+
+  OR
+
+  ```
+  npm i react-native-onboarding-swiper
+  ```
+
+  Reference: https://www.npmjs.com/package/react-native-onboarding-swiper
 
 ### To Run the app on the Emulator
 
