@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, ImageBackground, Pressable} from 'react-native';
+import AppIntroSlider from 'react-native-app-intro-slider';
 
 import {IntroNextBtn} from '../../components';
 
@@ -17,12 +18,6 @@ export default function Intro() {
   const [pageNum, setPageNum] = useState(0);
 
   let imageSrcArr = [introFood_1, introFood_2, introFood_3];
-  /* useEffect(() => {
-    switch(pageNum){
-        case 1:
-            
-    }
-  }, [pageNum]); */
 
   const navigateIntro = toWhich => {
     switch (toWhich) {

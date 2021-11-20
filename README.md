@@ -78,11 +78,16 @@
 yarn add react-native-app-intro-slider
 ```
 
+OR
+
+```
+npm install react-native-app-intro-slider --save
+```
+
 ### To Run the app on the Emulator
 
 - Open the emulator
 - In the app folder:
-
   ```
   npm run android
   ```
