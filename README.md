@@ -37,6 +37,8 @@
   yarn
   ```
 
+  ** Important Note: Use 'yarn' for this project **
+
 - Create & install 'React Native' project
 
   ```
@@ -47,6 +49,18 @@
 
   ```
   cd ReactNativeLabs
+  ```
+
+- Install React Native Vector Icons
+
+  ```
+  npm i react-native-vector-icons
+  ```
+
+  OR
+
+  ```
+  yarn add react-native-vector-icons
   ```
 
 - Install Axios (for HTTP requests)
