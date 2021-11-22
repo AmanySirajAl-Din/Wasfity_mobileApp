@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import {SharedStyles} from './common';
 
-import {IntroScreen} from './screens';
+import {IntroScreens} from './screens';
 
 import mainBg from '../assets/images/Background.png';
 import introEffect from '../assets/images/Effect4.png';
