@@ -31,7 +31,7 @@ const App = () => {
         }}>
         <ImageBackground
           source={introEffect}
-          resizeMode="cover"
+          resizeMode="contain"
           style={[SharedStyles.flex2]}>
           <IntroScreens />
         </ImageBackground>
