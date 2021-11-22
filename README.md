@@ -109,13 +109,29 @@
 npm install @react-navigation/native @react-navigation/native-stack
 ```
 
-Then
+OR
+
+```
+yarn add @react-navigation/native @react-navigation/native-stack
+```
+
+Then Installing dependencies into a bare React Native project
 
 ```
 npm install react-native-screens react-native-safe-area-context
 ```
 
-Refrence: https://reactnative.dev/docs/navigation
+OR
+
+```
+yarn add react-native-screens react-native-safe-area-context
+```
+
+Refrences:
+
+https://reactnative.dev/docs/navigation
+https://reactnavigation.org/docs/getting-started/
+
 ### To Run the app on the Emulator
 
 - Open the emulator
