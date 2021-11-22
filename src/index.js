@@ -7,16 +7,15 @@ import {
   Text,
   ImageBackground,
 } from 'react-native';
-import {SharedStyles} from './common';
 
-import {IntroScreens} from './screens';
+import AppContainer from './navigation';
 
 const App = () => {
   return (
     // <SafeAreaView> for notch
     // <StatusBar barStyle={'light-content'} />
     // <Text>Hello World</Text>
-    <IntroScreens />
+    <AppContainer />
   );
 };
 
