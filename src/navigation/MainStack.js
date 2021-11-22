@@ -10,5 +10,8 @@ const RootStack = createNativeStackNavigator(); // returns Navigator & Screen
 
 const MainStack = () => {
   // react component
-  
+  <RootStack.Navigator>
+    <RootStack.Screen />
+    <RootStack.Screen />
+  </RootStack.Navigator>;
 };
