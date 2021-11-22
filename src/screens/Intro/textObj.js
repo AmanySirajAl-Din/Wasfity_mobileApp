@@ -2,7 +2,7 @@ export const textObj = [
   {
     title: 'Delicious Food',
     text: 'Let’s eat some healthy food while steak to cook',
-    //bgImgSrc: '../../../assets/images/introBg_1.png',
+    bgImgSrc: require('../../../assets/images/introBg_1.png'),
   },
   {
     title: 'Healthy & Tasty',
