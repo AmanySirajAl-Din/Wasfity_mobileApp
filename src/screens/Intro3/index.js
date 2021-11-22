@@ -9,7 +9,6 @@ import mainBg from '../../../assets/images/Background.png';
 import introEffect from '../../../assets/images/Effect4.png';
 
 import {useNavigation} from '@react-navigation/native';
-import {HomeScreen} from '..';
 
 export function IntroScreens() {
   const navigation = useNavigation();
@@ -17,6 +16,10 @@ export function IntroScreens() {
   const gotoHomeScreen = () => {
     console.log('goto Home');
     navigation.navigate('HomeScreenName'); // name of the screen to go to
+    navigation.reset({
+      index: 0,
+      routes: [{name: 'HomeScreenName'}],
+    });
   };
 
   return (

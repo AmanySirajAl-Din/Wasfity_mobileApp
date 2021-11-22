@@ -2,18 +2,19 @@ import {StyleSheet} from 'react-native';
 import {COLORS, FONTS} from '../../common';
 
 export default StyleSheet.create({
+  mainView: {},
   text: {
     color: COLORS.black,
     fontFamily: FONTS.regular,
+    fontFamily: FONTS.bold,
     fontSize: 24,
+    paddingStart: 10,
     marginBottom: 10,
-    textAlign: 'center',
-    paddingEnd: 50,
-    paddingStart: 50,
+    lineHeight: 25,
   },
   title: {
     color: COLORS.orange,
-    fontFamily: FONTS.bold,
-    marginBottom: 10,
+    paddingTop: 10,
+    marginBottom: 0,
   },
 });
