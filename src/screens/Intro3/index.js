@@ -35,8 +35,10 @@ export function IntroScreens() {
         resizeMode="contain"
         style={[SharedStyles.flex2]}>
         <Onboarding
+          //NextButtonComponent={styles.btnTxt}
           onSkip={gotoHomeScreen}
           onDone={gotoHomeScreen}
+          //showDone={true} // a bool flag indicating whether the Done checkmark button is visible. Defaults to true.
           titleStyles={styles.title}
           subTitleStyles={styles.text}
           pages={[

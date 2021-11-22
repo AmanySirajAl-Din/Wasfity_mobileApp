@@ -2,6 +2,7 @@ import * as React from 'react';
 
 // import {} this is a named component
 import {NavigationContainer} from '@react-navigation/native';
+
 import {
   SafeAreaView,
   View,
