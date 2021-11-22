@@ -7,9 +7,10 @@ import {
   Text,
   ImageBackground,
 } from 'react-native';
-import {SharedStyles} from './common';
 
-import {IntroScreens} from './screens';
+import AppContainer from './navigation';
+
+import {SharedStyles} from './common';
 
 import mainBg from '../assets/images/Background.png';
 import introEffect from '../assets/images/Effect4.png';
