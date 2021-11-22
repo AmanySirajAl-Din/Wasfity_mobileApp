@@ -8,8 +8,16 @@ import styles from './styles';
 import mainBg from '../../../assets/images/Background.png';
 import introEffect from '../../../assets/images/Effect4.png';
 
+import {useNavigation} from '@react-navigation/native';
+import {HomeScreen} from '..';
+
 export function IntroScreens() {
-  
+  const navigation = useNavigation();
+
+  const gotoHomeScreen = () => {
+    console.log('goto Home');
+    navigation.navigate('HomeScreenName'); // name of the screen to go to
+  };
 
   return (
     <ImageBackground
@@ -24,8 +32,8 @@ export function IntroScreens() {
         resizeMode="contain"
         style={[SharedStyles.flex2]}>
         <Onboarding
-          onSkip={() => {}}
-          onDone={() => {}}
+          onSkip={gotoHomeScreen}
+          onDone={gotoHomeScreen}
           titleStyles={styles.title}
           subTitleStyles={styles.text}
           pages={[

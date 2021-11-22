@@ -15,7 +15,7 @@ const MainStack = () => (
   // react component
   <RootStack.Navigator>
     <RootStack.Screen component={IntroScreens} name={'Intro'} />
-    <RootStack.Screen component={HomeScreen} name={'HomeScreen'} />
+    <RootStack.Screen component={HomeScreen} name={'HomeScreenName'} />
   </RootStack.Navigator>
 );
 
