@@ -8,12 +8,15 @@ const RootStack = createNativeStackNavigator(); // returns Navigator & Screen
 // Navigator >> which wrap the screens to navigate between them
 // Screens >> the screens in the Navigator
 
-const MainStack = () => {
+const MainStack = () => (
+    /* don't need to use return when use (
+        ...my jsx code...
+    )  */
   // react component
   <RootStack.Navigator>
     <RootStack.Screen component={IntroScreens} name={'Intro'} />
     <RootStack.Screen component={Home} name={'Home'} />
-  </RootStack.Navigator>;
-};
+  </RootStack.Navigator>
+);
 
 export {MainStack};
