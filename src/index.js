@@ -15,6 +15,8 @@ const App = () => {
     // <SafeAreaView> for notch
     // <StatusBar barStyle={'light-content'} />
     // <Text>Hello World</Text>
+
+    // NavigationContainer
     <AppContainer />
   );
 };

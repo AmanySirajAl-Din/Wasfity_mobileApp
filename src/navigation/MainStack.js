@@ -9,11 +9,15 @@ const RootStack = createNativeStackNavigator(); // returns Navigator & Screen
 // Screens >> the screens in the Navigator
 
 const MainStack = () => (
+  // react component
   /* don't need to use return when use (
         ...my jsx code...
     )  */
-  // react component
-  <RootStack.Navigator>
+
+  // I can add initialRouteName={'Intro'} attribute
+  // to RootStack.Navigator to define the first screen to preview
+  // so I don't need to order the screens in the right order
+  <RootStack.Navigator initialRouteName>
     <RootStack.Screen component={IntroScreens} name={'Intro'} />
     <RootStack.Screen component={HomeScreen} name={'HomeScreenName'} />
   </RootStack.Navigator>
