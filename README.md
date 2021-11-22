@@ -86,8 +86,8 @@
 
   References:
 
-    https://aboutreact.com/react-native-app-intro-slider/
-    https://www.npmjs.com/package/react-native-app-intro-slider
+  https://aboutreact.com/react-native-app-intro-slider/
+  https://www.npmjs.com/package/react-native-app-intro-slider
 
 - Install react-native-onboarding-swiper
 
@@ -103,6 +103,19 @@
 
   Reference: https://www.npmjs.com/package/react-native-onboarding-swiper
 
+### For navigation install @react-navigation/native @react-navigation/native-stack
+
+```
+npm install @react-navigation/native @react-navigation/native-stack
+```
+
+Then
+
+```
+npm install react-native-screens react-native-safe-area-context
+```
+
+Refrence: https://reactnative.dev/docs/navigation
 ### To Run the app on the Emulator
 
 - Open the emulator
