@@ -3,12 +3,9 @@ import {COLORS, FONTS} from '../../common';
 
 export default StyleSheet.create({
   mainView: {
-    padding: 10,
-  },
-  headerView: {
     justifyContent: 'space-between',
     alignItems: 'flex-start',
-    marginBottom: 20,
+    padding: 15,
   },
   text: {
     color: COLORS.black,

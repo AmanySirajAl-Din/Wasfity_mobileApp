@@ -12,7 +12,7 @@ import Icon from 'react-native-vector-icons/Fontisto';
 import {SharedStyles} from '../../common';
 import styles from './styles';
 
-import {SearchBar} from '../../components';
+import {SearchBar, Categories} from '../../components';
 
 export default function Home() {
   /*
@@ -32,8 +32,8 @@ export default function Home() {
       </Pressable>
     </View> */
   return (
-    <SafeAreaView>
-      <View style={[SharedStyles.center, styles.mainView]}>
+    <SafeAreaView style={[styles.mainView]}>
+      <View style={[SharedStyles.center, styles.headerView]}>
         <View>
           <Text style={[styles.text, styles.title]}>Let's Eat</Text>
           <Text style={styles.text}>Quality Food</Text>
@@ -46,6 +46,7 @@ export default function Home() {
         </Pressable>
       </View>
       <SearchBar />
+      <Categories />
     </SafeAreaView>
   );
 }

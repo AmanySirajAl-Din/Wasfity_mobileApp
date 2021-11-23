@@ -3,27 +3,28 @@ import {COLORS, FONTS} from '../../common';
 
 export default StyleSheet.create({
   mainView: {
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-between',
+    marginBottom: 15,
   },
   inputContainer: {
     justifyContent: 'flex-start',
-    width: '80%',
+    width: '83%',
     paddingStart: 10,
-    borderRadius: 7,
-    fontSize: 25,
+    borderRadius: 10,
     backgroundColor: COLORS.lightGrey2,
   },
   txtBox: {
     fontFamily: FONTS.medium,
-    fontSize: 16,
+    fontSize: 20,
   },
   iconStyle: {
     fontSize: 25,
   },
   btn: {
     backgroundColor: COLORS.orange,
-    padding: 10,
-    borderRadius: 7,
-    fontSize: 70,
+    padding: '3%',
+    paddingStart: '4%',
+    paddingEnd: '4%',
+    borderRadius: 10,
   },
 });
