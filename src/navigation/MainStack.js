@@ -2,7 +2,9 @@ import React from 'react';
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {IntroScreens, HomeScreen} from '../screens';
+import {IntroScreens, Home} from '../screens';
+
+import {BottomTabsStack} from './BottomTabsStack';
 
 const RootStack = createNativeStackNavigator(); // returns Navigator & Screen
 // Navigator >> which wrap the screens to navigate between them
@@ -18,11 +20,11 @@ const MainStack = () => (
   // to RootStack.Navigator to define the first screen to preview
   // so I don't need to order the screens in the right order
   <RootStack.Navigator
-    initialRouteName={'HomeScreenName'}
+    //initialRouteName={'HomeScreen'}
     // to remove header
     screenOptions={{headerShown: false}}>
     <RootStack.Screen component={IntroScreens} name={'Intro'} />
-    <RootStack.Screen component={HomeScreen} name={'HomeScreenName'} />
+    <RootStack.Screen component={BottomTabsStack} name={'BottomTabsStack'} />
   </RootStack.Navigator>
 );
 

@@ -15,10 +15,10 @@ export function IntroScreens() {
 
   const gotoHomeScreen = () => {
     console.log('goto Home');
-    navigation.navigate('HomeScreenName'); // name of the screen to go to
+    navigation.navigate('BottomTabsStack'); // name of the screen to go to
     navigation.reset({
       index: 0,
-      routes: [{name: 'HomeScreenName'}],
+      routes: [{name: 'BottomTabsStack'}],
     });
   };
 
