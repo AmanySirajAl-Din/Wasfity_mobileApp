@@ -11,7 +11,7 @@ export default StyleSheet.create({
     width: '83%',
     paddingStart: 10,
     borderRadius: 10,
-    backgroundColor: COLORS.lightGrey2,
+    backgroundColor: COLORS.lightGray2,
   },
   txtBox: {
     fontFamily: FONTS.medium,
