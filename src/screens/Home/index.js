@@ -6,14 +6,18 @@ import {
   ImageBackground,
   Pressable,
 } from 'react-native';
+
 import Icon from 'react-native-vector-icons/Fontisto';
 
 import {SharedStyles} from '../../common';
 import styles from './styles';
 
+import {SearchBar} from '../../components';
+
 export default function Home() {
   /*
-  - To Hide & show elements 
+  ### To Hide & show elements 
+  ==========================
   const [show, setShow] = useState(false);
   <View style={[SharedStyles.flex1, SharedStyles.flexEnd, styles.mainView]}>
       {show && <Text style={[styles.text, styles.title]}>Let's Eat </Text>}
@@ -28,16 +32,20 @@ export default function Home() {
       </Pressable>
     </View> */
   return (
-    <SafeAreaView
-      style={[SharedStyles.center, SharedStyles.flex1, styles.mainView]}>
-      <View style={[SharedStyles.flex1]}>
-        <Text style={[styles.text, styles.title]}>Let's Eat</Text>
-        <Text style={styles.text}>Quality Food</Text>
+    <SafeAreaView>
+      <View style={[SharedStyles.center, styles.mainView]}>
+        <View>
+          <Text style={[styles.text, styles.title]}>Let's Eat</Text>
+          <Text style={styles.text}>Quality Food</Text>
+        </View>
+        <Pressable style={SharedStyles.flexEnd}>
+          <Icon
+            name="bell"
+            style={[styles.text, SharedStyles.flexEnd, styles.iconStyle]}
+          />
+        </Pressable>
       </View>
-      <View
-        style={[SharedStyles.center, SharedStyles.flex1, SharedStyles.flexEnd]}>
-        <Icon name="bell" style={[styles.text, styles.iconStyle]} />
-      </View>
+      <SearchBar />
     </SafeAreaView>
   );
 }

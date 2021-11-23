@@ -18,7 +18,7 @@ const MainStack = () => (
   // to RootStack.Navigator to define the first screen to preview
   // so I don't need to order the screens in the right order
   <RootStack.Navigator
-    initialRouteName={'Intro'}
+    initialRouteName={'HomeScreenName'}
     // to remove header
     screenOptions={{headerShown: false}}>
     <RootStack.Screen component={IntroScreens} name={'Intro'} />

@@ -12,7 +12,6 @@ export default StyleSheet.create({
     fontFamily: FONTS.regular,
     fontFamily: FONTS.bold,
     fontSize: 24,
-    marginBottom: 10,
     lineHeight: 25,
   },
   title: {
