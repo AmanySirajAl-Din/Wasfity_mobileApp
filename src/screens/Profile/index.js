@@ -1,6 +1,8 @@
 import React from 'react';
 import {Text} from 'react-native';
 
+import styles from './styles';
+
 export const Profile = () => {
-  return <Text>Hello Profile</Text>;
+  return <Text style={styles.text}>Hello Profile</Text>;
 };
