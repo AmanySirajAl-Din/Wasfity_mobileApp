@@ -11,7 +11,6 @@ const categoriesObj = [
   'Lunch',
   'Dinner',
   'Pasta',
-  'Chiken',
   'Sweets',
   'Salads',
 ];
@@ -33,7 +32,10 @@ export const Categories = () => {
 export const Category = () => {
   return (
     <Pressable style={styles.container}>
-      <Image source={IMAGES.dummyImage} style={styles.image} />
+      <Image
+        source={require('../../../assets/images/Breakfast.png')}
+        style={styles.image}
+      />
       <View style={styles.contentContainer}>
         <Text style={styles.catgText}>{categoriesObj[0]}</Text>
       </View>
