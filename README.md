@@ -146,6 +146,17 @@ Refrences:
 https://reactnative.dev/docs/navigation
 https://reactnavigation.org/docs/getting-started/
 
+### Bottom Tabs Navigator
+
+Sample: https://reactnavigation.org/assets/navigators/tabs/bottom-tabs-demo.mov
+
+- Install @react-navigation/bottom-tabs
+  ```
+  yarn add @react-navigation/bottom-tabs
+  ```
+  Reference:
+  https://reactnavigation.org/docs/bottom-tab-navigator/
+
 ### To Run the app on the Emulator
 
 - Open the emulator

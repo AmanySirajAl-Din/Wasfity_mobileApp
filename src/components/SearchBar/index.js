@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, TextInput, Touchable, Pressable} from 'react-native';
 import IconEntypo from 'react-native-vector-icons/Entypo';
-import IconFeather from 'react-native-vector-icons/Feather';
+import IconFontAwesome from 'react-native-vector-icons/FontAwesome';
 
 import {SharedStyles} from '../../common';
 import styles from './styles';
@@ -18,9 +18,9 @@ export const SearchBar = () => {
           placeholder={'Enter movie name ...'}
         />
       </View>
-      
+
       <Pressable style={[styles.btn, styles.filterBtn]}>
-        <IconFeather name="filter" style={styles.iconStyle} />
+        <IconFontAwesome name="filter" style={styles.iconStyle} />
       </Pressable>
     </View>
   );
