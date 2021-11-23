@@ -157,6 +157,18 @@ Sample: https://reactnavigation.org/assets/navigators/tabs/bottom-tabs-demo.mov
   Reference:
   https://reactnavigation.org/docs/bottom-tab-navigator/
 
+### Install React Native Drawer
+
+```
+npm install --save react-native-drawer
+```
+
+OR
+
+```
+yarn add react-native-drawer
+```
+
 ### To Run the app on the Emulator
 
 - Open the emulator
