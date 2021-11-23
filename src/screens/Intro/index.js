@@ -57,7 +57,7 @@ export default function Intro() {
           resizeMode="contain"
           style={SharedStyles.flex1}></ImageBackground>
       </ImageBackground>
-      <View style={(SharedStyles.flex1, SharedStyles.flexEnd)}>
+      <View style={[SharedStyles.flex1, SharedStyles.flexEnd]}>
         <Text style={[styles.text, styles.title]}>
           {textObj[pageNum].title}
         </Text>
