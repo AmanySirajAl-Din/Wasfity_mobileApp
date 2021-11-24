@@ -13,6 +13,8 @@ export const Poplular = () => {
       <View style={SharedStyles.center}>
         <RecipeCard />
         <RecipeCard />
+        <RecipeCard />
+        <RecipeCard />
       </View>
     </>
   );

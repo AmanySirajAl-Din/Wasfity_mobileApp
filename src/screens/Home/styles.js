@@ -6,7 +6,6 @@ export default StyleSheet.create({
     padding: 10,
   },
   headerView: {
-    justifyContent: 'space-between',
     alignItems: 'flex-start',
     marginBottom: 20,
   },

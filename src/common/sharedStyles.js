@@ -31,4 +31,7 @@ export default StyleSheet.create({
   redBg: {
     backgroundColor: 'red',
   },
+  spaceBetween: {
+    justifyContent: 'space-between',
+  },
 });

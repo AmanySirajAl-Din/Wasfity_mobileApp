@@ -2,19 +2,12 @@ import {StyleSheet} from 'react-native';
 import {COLORS, FONTS} from '../../common';
 
 export default StyleSheet.create({
-  text: {
-    color: COLORS.black,
-    fontFamily: FONTS.regular,
-    fontFamily: FONTS.bold,
-    fontSize: 24,
-    lineHeight: 25,
-  },
   container: {
     backgroundColor: COLORS.lightGray,
     width: 170,
-    height: 230,
+    height: 330,
     margin: 7,
-    padding: 10,
+    padding: 5,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -24,6 +17,7 @@ export default StyleSheet.create({
     shadowRadius: 4.65,
     elevation: 8,
     borderRadius: 10,
+    marginBottom: 50,
   },
   contentContainer: {
     margin: 10,
@@ -31,16 +25,28 @@ export default StyleSheet.create({
     //backgroundColor: 'red',
   },
   catgText: {
-    fontSize: 20,
-    fontFamily: FONTS.bold,
-    color: COLORS.orange,
+    fontSize: 18,
+    fontFamily: FONTS.medium,
+    color: COLORS.black,
   },
   image: {
     width: '100%',
-    height: '75%',
+    height: '55%',
     borderRadius: 16,
   },
   iconContainer: {
     alignItems: 'flex-end',
+  },
+  btn: {
+    width: '100%',
+    backgroundColor: COLORS.orange,
+    padding: 5,
+    margin: 5,
+    borderRadius: 10,
+  },
+  btnText: {
+    fontFamily: FONTS.regular,
+    color: 'white',
+    fontSize: 12,
   },
 });

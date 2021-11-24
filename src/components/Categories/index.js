@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Pressable, Image} from 'react-native';
+import {Text, View, Pressable, Image, ScrollView} from 'react-native';
 
 import {IMAGES, SharedStyles} from '../../common';
 import {Poplular} from '../Poplular';
@@ -24,7 +24,9 @@ export const Categories = () => {
         <Category />
         <Category />
       </View>
-      <Poplular />
+      <ScrollView>
+        <Poplular />
+      </ScrollView>
     </>
   );
 };

@@ -5,6 +5,7 @@ import {
   Text,
   ImageBackground,
   Pressable,
+  ScrollView,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Fontisto';
@@ -12,7 +13,9 @@ import Icon from 'react-native-vector-icons/Fontisto';
 import {SharedStyles} from '../../common';
 import styles from './styles';
 
-import {SearchBar, Categories} from '../../components';
+import {SearchBar, Categories, Poplular, DrawerContent} from '../../components';
+
+import Drawer from 'react-native-drawer';
 
 export default function Home() {
   /*
@@ -31,22 +34,39 @@ export default function Home() {
         <Text>Show</Text>
       </Pressable>
     </View> */
+
+  const closeControlPanel = () => {
+    this._drawer.close();
+  };
+  const openControlPanel = () => {
+    this._drawer.open();
+  };
+
   return (
     <SafeAreaView style={[styles.mainView]}>
-      <View style={[SharedStyles.center, styles.headerView]}>
-        <View>
-          <Text style={[styles.text, styles.title]}>Let's Eat</Text>
-          <Text style={styles.text}>Quality Food</Text>
+      {/* <Drawer ref={ref => (this._drawer = ref)} content={<DrawerContent />}> */}
+      <View>
+        <View
+          style={[
+            SharedStyles.center,
+            SharedStyles.spaceBetween,
+            styles.headerView,
+          ]}>
+          <View>
+            <Text style={[styles.text, styles.title]}>Let's Eat</Text>
+            <Text style={styles.text}>Quality Food</Text>
+          </View>
+          <Pressable style={SharedStyles.flexEnd}>
+            <Icon
+              name="bell"
+              style={[styles.text, SharedStyles.flexEnd, styles.iconStyle]}
+            />
+          </Pressable>
         </View>
-        <Pressable style={SharedStyles.flexEnd}>
-          <Icon
-            name="bell"
-            style={[styles.text, SharedStyles.flexEnd, styles.iconStyle]}
-          />
-        </Pressable>
+        <SearchBar />
+        <Categories />
       </View>
-      <SearchBar />
-      <Categories />
+      {/* </Drawer> */}
     </SafeAreaView>
   );
 }
