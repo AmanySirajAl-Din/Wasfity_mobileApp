@@ -6,7 +6,21 @@ import IconFontAwesome from 'react-native-vector-icons/FontAwesome';
 import {SharedStyles} from '../../common';
 import styles from './styles';
 
+import {useNavigation} from '@react-navigation/core';
+
 export const SearchBar = () => {
+  const navigation = useNavigation();
+
+  const gotoFilter = () => {
+    console.log('goto Filter');
+    navigation.navigate('HomeStack');
+    navigation.navigate('Filter'); // name of the screen to go to
+    /* navigation.reset({
+      index: 0,
+      routes: [{name: 'Filter'}],
+    }); */
+  };
+
   return (
     <View style={[SharedStyles.center, styles.mainView]}>
       <View style={[SharedStyles.center, styles.inputContainer]}>
@@ -19,7 +33,7 @@ export const SearchBar = () => {
         />
       </View>
 
-      <Pressable style={[styles.btn, styles.filterBtn]}>
+      <Pressable style={[styles.btn, styles.filterBtn]} onPress={gotoFilter}>
         <IconFontAwesome name="filter" style={styles.iconStyle} />
       </Pressable>
     </View>

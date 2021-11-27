@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {IntroScreens, Home, Splash} from '../screens';
 
 import {BottomTabsStack} from './BottomTabsStack';
+import {HomeStack} from './HomeStack';
 
 const RootStack = createNativeStackNavigator(); // returns Navigator & Screen
 // Navigator >> which wrap the screens to navigate between them
@@ -26,6 +27,7 @@ const MainStack = () => (
     <RootStack.Screen component={Splash} name={'SplashScreen'} />
     <RootStack.Screen component={IntroScreens} name={'Intro'} />
     <RootStack.Screen component={BottomTabsStack} name={'BottomTabsStack'} />
+    <RootStack.Screen component={HomeStack} name={'HomeStack'} />
   </RootStack.Navigator>
 );
 

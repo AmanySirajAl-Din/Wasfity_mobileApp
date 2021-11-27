@@ -9,7 +9,7 @@ import IconFontAwesome from 'react-native-vector-icons/FontAwesome';
 import IconOcticons from 'react-native-vector-icons/Octicons';
 import IconMaterial from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import {Home, ShoppingList, Recipe, Profile} from '../screens';
+import {Home, ShoppingList, MyRecipe, Profile} from '../screens';
 import {View} from 'react-native';
 
 const Tab = createBottomTabNavigator();
@@ -36,7 +36,6 @@ function BottomTabsStack() {
         tabBarInactiveTintColor: 'gray',
         tabBarActiveBackgroundColor: COLORS.orange,
         tabBarLabelStyle: {fontFamily: FONTS.medium, fontSize: 13},
-        headerShown: false,
       })}>
       <Tab.Screen
         component={Home}
@@ -54,7 +53,7 @@ function BottomTabsStack() {
       />
       <Tab.Screen
         component={ShoppingList}
-        name="ShoppingListScreen"
+        name="Shopping List"
         options={{
           tabBarLabel: 'Shopping List',
           tabBarIcon: tabInfo => (
@@ -67,8 +66,8 @@ function BottomTabsStack() {
         }}
       />
       <Tab.Screen
-        component={Recipe}
-        name="Recipe"
+        component={MyRecipe}
+        name="My Recipes"
         options={{
           tabBarLabel: 'Recipe',
           tabBarIcon: tabInfo => (
@@ -89,7 +88,7 @@ function BottomTabsStack() {
       />
       <Tab.Screen
         component={Profile}
-        name="ProfileScreen"
+        name="My Profile"
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: tabInfo => (
