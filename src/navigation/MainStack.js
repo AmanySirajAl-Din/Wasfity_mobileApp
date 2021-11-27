@@ -2,7 +2,7 @@ import React from 'react';
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {IntroScreens, Home} from '../screens';
+import {IntroScreens, Home, Splash} from '../screens';
 
 import {BottomTabsStack} from './BottomTabsStack';
 
@@ -23,6 +23,7 @@ const MainStack = () => (
     initialRouteName={'BottomTabsStack'}
     // to remove header
     screenOptions={{headerShown: false}}>
+    <RootStack.Screen component={Splash} name={'SplashScreen'} />
     <RootStack.Screen component={IntroScreens} name={'Intro'} />
     <RootStack.Screen component={BottomTabsStack} name={'BottomTabsStack'} />
   </RootStack.Navigator>
