@@ -169,6 +169,18 @@ OR
 yarn add react-native-drawer
 ```
 
+### Install Radio button
+
+```
+npm i react-native-simple-radio-button --save
+```
+
+OR
+
+```
+yarn add react-native-simple-radio-button
+```
+
 ### To Run the app on the Emulator
 
 - Open the emulator
