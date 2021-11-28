@@ -7,14 +7,26 @@ import {IMAGES, COLORS, SharedStyles} from '../../common';
 
 import styles from './styles';
 
+import {useNavigation} from '@react-navigation/core';
+
 export const RecipeCard = () => {
+  const navigation = useNavigation();
+
+  const gotoRecipeDetails = () => {
+    console.log('goto Filter');
+    navigation.navigate('RecipeDetails'); // name of the screen to go to
+    /* navigation.reset({
+      index: 0,
+      routes: [{name: 'Filter'}],
+    }); */
+  };
   return (
     <View style={styles.container}>
       <View style={styles.iconContainer}>
         {/* <IconFontAwesome name="heart"/> */}
         <IconFontAwesome name="heart-o" size={23} color={COLORS.orange} />
       </View>
-      <Pressable>
+      <Pressable onPress={gotoRecipeDetails}>
         <Image source={IMAGES.dummyImage} style={styles.image} />
         <View style={styles.contentContainer}>
           <Text style={styles.catgText}>Fried Chicken Chicken</Text>

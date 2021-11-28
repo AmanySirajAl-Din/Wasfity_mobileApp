@@ -1,13 +1,41 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import {SharedStyles} from '../../common';
+import {SharedStyles, COLORS} from '../../common';
 
 import styles from './styles';
 
+import {RadioButton} from 'react-native-paper';
+
+/* import RadioForm, {
+  RadioButton,
+  RadioButtonInput,
+  RadioButtonLabel,
+} from 'react-native-simple-radio-button'; */
+
 export const Filter = () => {
+  const [checked, setChecked] = React.useState('first');
+
   return (
-    <View style={[SharedStyles.h100, SharedStyles.center, styles.mainView]}>
-      <Text style={styles.text}>Filter</Text>
+    <View style={[styles.mainView]}>
+      <Text style={[styles.text, styles.title]}>Sort By:</Text>
+      <View style={[styles.radioContainer]}>
+        <RadioButton
+          value="prepare time"
+          status={checked === 'first' ? 'checked' : 'unchecked'}
+          onPress={() => setChecked('first')}
+          color={COLORS.orange}
+        />
+        <Text style={[styles.text]}>Prepare time</Text>
+      </View>
+      <View style={[styles.radioContainer]}>
+        <RadioButton
+          value="Dificulty"
+          status={checked === 'second' ? 'checked' : 'unchecked'}
+          onPress={() => setChecked('second')}
+          color={COLORS.orange}
+        />
+        <Text style={[styles.text]}>Dificulty</Text>
+      </View>
     </View>
   );
 };

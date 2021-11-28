@@ -181,6 +181,14 @@ OR
 yarn add react-native-simple-radio-button
 ```
 
+ref: https://www.npmjs.com/package/react-native-simple-radio-button
+
+- Another one
+  ```
+  yarn add react-native-paper
+  ```
+  ref: https://callstack.github.io/react-native-paper/radio-button.html
+
 ### To Run the app on the Emulator
 
 - Open the emulator
@@ -220,3 +228,6 @@ module.exports = {
 assets: ['./assets/fonts/'],
 };
 ```
+
+### React Native Firebase
+

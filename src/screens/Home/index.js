@@ -35,12 +35,12 @@ export default function Home() {
       </Pressable>
     </View> */
 
-  const closeControlPanel = () => {
+  /* const closeControlPanel = () => {
     this._drawer.close();
   };
   const openControlPanel = () => {
     this._drawer.open();
-  };
+  }; */
 
   return (
     <SafeAreaView style={[styles.mainView]}>
@@ -63,8 +63,12 @@ export default function Home() {
             />
           </Pressable>
         </View>
-        <SearchBar />
-        <Categories />
+        <ScrollView>
+          <View style={[SharedStyles.w100, SharedStyles.h100]}>
+            <SearchBar />
+            <Categories />
+          </View>
+        </ScrollView>
       </View>
       {/* </Drawer> */}
     </SafeAreaView>

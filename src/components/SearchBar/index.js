@@ -13,7 +13,6 @@ export const SearchBar = () => {
 
   const gotoFilter = () => {
     console.log('goto Filter');
-    navigation.navigate('HomeStack');
     navigation.navigate('Filter'); // name of the screen to go to
     /* navigation.reset({
       index: 0,

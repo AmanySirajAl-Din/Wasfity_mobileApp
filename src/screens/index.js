@@ -7,5 +7,5 @@ export {default as Home} from './Home';
 export {ShoppingList} from './ShoppingList';
 export {Profile} from './Profile';
 export {MyRecipe} from './MyRecipe';
-export {Recipe} from './Recipe';
+export {RecipeDetails} from './RecipeDetails';
 export {Filter} from './Filter';

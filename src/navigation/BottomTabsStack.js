@@ -11,6 +11,7 @@ import IconMaterial from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import {Home, ShoppingList, MyRecipe, Profile} from '../screens';
 import {View} from 'react-native';
+import {HomeStack} from './HomeStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -36,9 +37,10 @@ function BottomTabsStack() {
         tabBarInactiveTintColor: 'gray',
         tabBarActiveBackgroundColor: COLORS.orange,
         tabBarLabelStyle: {fontFamily: FONTS.medium, fontSize: 13},
+        headerTitleAlign: 'center',
       })}>
       <Tab.Screen
-        component={Home}
+        component={HomeStack}
         name="HomeScreen"
         options={{
           tabBarLabel: 'Home',
@@ -49,6 +51,7 @@ function BottomTabsStack() {
               color={tabInfo.focused ? 'white' : 'gray'}
             />
           ),
+          headerShown: false,
         }}
       />
       <Tab.Screen

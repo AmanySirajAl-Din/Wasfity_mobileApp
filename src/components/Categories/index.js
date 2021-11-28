@@ -24,9 +24,7 @@ export const Categories = () => {
         <Category />
         <Category />
       </View>
-      <ScrollView>
-        <Poplular />
-      </ScrollView>
+      <Poplular />
     </>
   );
 };
