@@ -231,3 +231,12 @@ assets: ['./assets/fonts/'],
 
 ### React Native Firebase
 
+- Installation
+
+```
+npm install --save @react-native-firebase/app
+```
+
+```
+yarn add @react-native-firebase/app @react-native-firebase/firestore
+```

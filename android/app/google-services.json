@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "20370346274",
+    "project_id": "recipe-maker-system",
+    "storage_bucket": "recipe-maker-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20370346274:android:564aff5f65296d90cc957b",
+        "android_client_info": {
+          "package_name": "com.wasfity_mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20370346274-ba063qa3fm0j9uipjbosicts0itrvl10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANdMl9cCa93MF5jKuNPguS80JVMZKbLzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20370346274-ba063qa3fm0j9uipjbosicts0itrvl10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
