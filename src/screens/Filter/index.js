@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import {SharedStyles, COLORS} from '../../common';
 
 import styles from './styles';
@@ -18,24 +18,27 @@ export const Filter = () => {
   return (
     <View style={[styles.mainView]}>
       <Text style={[styles.text, styles.title]}>Sort By:</Text>
-      <View style={[styles.radioContainer]}>
+      <TouchableOpacity
+        style={[styles.radioContainer]}
+        onPress={() => setChecked('first')}>
         <RadioButton
           value="prepare time"
           status={checked === 'first' ? 'checked' : 'unchecked'}
-          onPress={() => setChecked('first')}
+          /* onPress={() => setChecked('first')} */
           color={COLORS.orange}
         />
         <Text style={[styles.text]}>Prepare time</Text>
-      </View>
-      <View style={[styles.radioContainer]}>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={[styles.radioContainer]}
+        onPress={() => setChecked('second')}>
         <RadioButton
           value="Dificulty"
           status={checked === 'second' ? 'checked' : 'unchecked'}
-          onPress={() => setChecked('second')}
           color={COLORS.orange}
         />
         <Text style={[styles.text]}>Dificulty</Text>
-      </View>
+      </TouchableOpacity>
     </View>
   );
 };

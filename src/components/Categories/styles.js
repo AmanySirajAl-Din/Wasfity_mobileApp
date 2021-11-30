@@ -40,4 +40,10 @@ export default StyleSheet.create({
     height: '75%',
     borderRadius: 16,
   },
+  contentContainer_1: {
+    paddingBottom: 100,
+    paddingHorizontal: 5,
+    paddingTop: 5,
+    marginBottom: 30,
+  },
 });

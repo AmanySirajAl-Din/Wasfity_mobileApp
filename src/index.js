@@ -13,6 +13,7 @@ import {
 
 // import without {} this is a default exported component
 import AppContainer from './navigation';
+import {FirebaseApp} from './FirebaseApp';
 
 const App = () => {
   return (

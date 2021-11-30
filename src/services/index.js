@@ -1,1 +1,1 @@
-export * from './getAllMovies';
+export * from './getAllRecipes';

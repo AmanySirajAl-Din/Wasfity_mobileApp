@@ -17,7 +17,17 @@ import {SearchBar, Categories, Poplular, DrawerContent} from '../../components';
 
 import Drawer from 'react-native-drawer';
 
+import {getAllRecipes, recipes} from '../../services';
+
 export default function Home() {
+  /* const onLoad = async () => {
+    const {data} = await getAllRecipes();
+    console.log(data);
+  };
+
+  useEffect(() => {
+    onLoad();
+  }, [onLoad]); */
   /*
   ### To Hide & show elements 
   ==========================
@@ -43,7 +53,7 @@ export default function Home() {
   }; */
 
   return (
-    <SafeAreaView style={[styles.mainView]}>
+    <SafeAreaView style={[styles.mainView, {flex: 1}]}>
       {/* <Drawer ref={ref => (this._drawer = ref)} content={<DrawerContent />}> */}
       <View>
         <View
@@ -63,12 +73,10 @@ export default function Home() {
             />
           </Pressable>
         </View>
-        <ScrollView>
-          <View style={[SharedStyles.w100, SharedStyles.h100]}>
-            <SearchBar />
-            <Categories />
-          </View>
-        </ScrollView>
+        {/* <ScrollView contentContainerStyle={{paddingBottom: 60}}> */}
+        <SearchBar />
+        <Categories />
+        {/* </ScrollView> */}
       </View>
       {/* </Drawer> */}
     </SafeAreaView>

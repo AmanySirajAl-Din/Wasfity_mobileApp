@@ -8,4 +8,9 @@ export default StyleSheet.create({
     fontSize: 24,
     lineHeight: 25,
   },
+  contentContainer: {
+    paddingBottom: 430,
+    paddingHorizontal: 15,
+    paddingTop: 15,
+  },
 });
